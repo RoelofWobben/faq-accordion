@@ -1,0 +1,102 @@
+:root {
+    --white: hsl(0, 0%, 100%);
+    --light_pink: hsl(275, 100%, 97%); 
+    --grayish_purple: hsl(292, 16%, 49%); 
+    --dark_purple: hsl(292, 42%, 14%); 
+}
+
+* {
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 16px; 
+    height: 100vh; 
+    padding-left: 15px; 
+    padding-right: 15px; 
+    background-color: var(--light_pink);
+    position: relative;  
+}
+
+body::after {
+    content: ''; 
+    background: url('./assets/images/background-pattern-mobile.svg');
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: fixed;
+    width: 375px; 
+    height: 232px;
+    z-index: -1;   
+}
+
+h1 {
+    color: var(--dark_purple); 
+}
+
+h2 {
+    font-size: 16px;
+    text-align: left;
+    font-weight: 700;
+    color: var(--dark_purple);
+    width: 230px;
+    margin-right: 13px;
+    margin-bottom: 13px;   
+}
+
+p {
+    font-size: 14px;
+    margin-right: 20px;
+    color: var(--grayish_purple);  
+}
+
+
+.accordion-group {
+    position: absolute;
+    background: white; 
+    width: 345px;
+    padding-left: 50px; 
+    padding-top: 40px;
+    margin-top: 120px;
+    height: 450px;
+    border-radius: 10px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.header {
+    display: flex;
+    margin-bottom: 30px;  
+}
+
+.star {
+    padding-right: 30px; 
+}
+
+.accordion-trigger {
+    background: white;
+    border: none;
+    display: flex;   
+}
+
+.accordion-panel {
+    margin-bottom: 40px; 
+}
+
+.icon {
+    width: 25px; 
+    height: 25px;
+}
+
+
+#panel4, 
+#panel2, 
+#panel3 {
+    display: none; 
+}
+
+
+
