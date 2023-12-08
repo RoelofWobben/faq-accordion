@@ -23,13 +23,12 @@
             <h1> FAQs </h1>
         </div>
         
-        <h3>
-            <button id="trigger1" class="accordion-trigger" aria-expanded="true" aria-controls="panel1">
-                <h2>What is Frontend Mentor, and how will it help me?</h2>
-                <img src="./assets/images/icon-plus.svg" class="icon">
-            </button>
-        </h3>
-        <div id="panel1" role="region" aria-labelledby="trigger1" class="accordion-panel">
+        <button id="trigger1" class="accordion-trigger" aria-expanded="false" aria-controls="panel1">
+            <h2>What is Frontend Mentor, and how will it help me?</h2>
+            <img src="./assets/images/icon-plus.svg" class="icon">
+        </button>
+    
+        <div id="panel1" role="region" aria-labelledby="trigger1" class="accordion-panel" hidden>
             <p>
                 Frontend Mentor offers realistic coding challenges to help developers improve their
                 frontend coding skills with projects in HTML, CSS, and JavaScript. It's suitable for
@@ -38,26 +37,24 @@
            
         </div>
 
-        <h3>
-            <button id="trigger2" class="accordion-trigger" aria-expanded="true" aria-controls="panel2">
-                <h2> Is Frontend Mentor free? </h2>
-                <img src="./assets/images/icon-plus.svg" class="icon">
-            </button>
-        </h3>
-        <div id="panel2" role="region" aria-labelledby="trigger2" class="accordion-panel">
+        <button id="trigger2" class="accordion-trigger" aria-expanded="false" aria-controls="panel2">
+            <h2> Is Frontend Mentor free? </h2>
+            <img src="./assets/images/icon-plus.svg" class="icon">
+        </button>
+        
+        <div id="panel2" role="region" aria-labelledby="trigger2" class="accordion-panel" hidden>
             <p>
                 Yes, Frontend Mentor offers both free and premium coding challenges, with the free
                 option providing access to a range of projects suitable for all skill levels.
             </p>
         </div>
 
-        <h3>
-            <button id="trigger3" class="accordion-trigger" aria-expanded="true" aria-controls="panel3">
-                <h2>Can I use Frontend Mentor projects in my portfolio? </h2>
-                <img src="./assets/images/icon-plus.svg" class="icon">
-            </button>
-        </h3>
-        <div id="panel3" role="region" aria-labelledby="trigger3" class="accordion-panel">
+        <button id="trigger3" class="accordion-trigger" aria-expanded="false" aria-controls="panel3">
+            <h2>Can I use Frontend Mentor projects in my portfolio? </h2>
+            <img src="./assets/images/icon-plus.svg" class="icon">
+        </button>
+       
+        <div id="panel3" role="region" aria-labelledby="trigger3" class="accordion-panel" hidden>
             <p>
                 Yes, you can use projects completed on Frontend Mentor in your portfolio. It's an excellent
                 way to showcase your skills to potential employers!
@@ -65,13 +62,12 @@
         </div>
 
 
-        <h3>
-            <button id="trigger4" class="accordion-trigger" aria-expanded="true" aria-controls="panel4">
-                <h2>How can I get help if I'm stuck on a Frontend Mentor challenge?</h2>
-                <img src="./assets/images/icon-plus.svg">
-            </button>
-        </h3>
-        <div id="panel4" role="region" aria-labelledby="trigger4" class="accordion-panel">
+        <button id="trigger4" class="accordion-trigger" aria-expanded="false" aria-controls="panel4" hidden>
+            <h2>How can I get help if I'm stuck on a Frontend Mentor challenge?</h2>
+            <img src="./assets/images/icon-plus.svg">
+        </button>
+        
+        <div id="panel4" role="region" aria-labelledby="trigger4" class="accordion-panel" hidden>
             <p>
                 The best place to get help is inside Frontend Mentor's Discord community. There's a help
                 channel where you can ask questions and seek support from other community members.
@@ -79,6 +75,7 @@
         </div>
      
     </div>
+    <script src="./roelof.js"></script>
     
 </body>
 
