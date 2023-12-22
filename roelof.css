@@ -38,22 +38,6 @@ h1 {
     color: var(--dark_purple); 
 }
 
-h2 {
-    font-size: 16px;
-    text-align: left;
-    font-weight: 700;
-    color: var(--dark_purple);
-    width: 230px;
-    margin-right: 13px;
-    margin-bottom: 13px;   
-}
-
-h2:hover {
-    cursor: pointer;
-    color: var(--grayish_purple);  
-
-}
-
 p {
     font-size: 14px;
     margin-right: 20px;
@@ -67,8 +51,8 @@ p {
     width: 345px;
     padding-left: 50px; 
     padding-top: 40px;
+    padding-bottom: 50px; 
     margin-top: 120px;
-    height: 450px;
     border-radius: 10px;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
@@ -85,8 +69,20 @@ p {
 .accordion-trigger {
     background: white;
     border: none;
-    display: flex;   
+    display: flex;
+    width:250px; 
 }
+
+h2 {
+    font-size: 16px;
+    text-align: left;
+    font-weight: 700;
+    color: var(--dark_purple);
+    width: 350px;
+    margin-right: 13px;
+    margin-bottom: 13px;   
+}   
+
 
 .accordion-panel {
     margin-bottom: 40px; 
@@ -131,10 +127,18 @@ p {
          margin-top: 200px;
     }
 
-    h2 {
-        width: 350px;
-        font-size: 14px; 
+    .accordion-trigger {
+        width:450px; 
     }
+
+    .accordion-panel {
+        height: 0px; 
+    }
+
+
+
+    
+    
 
 
     
