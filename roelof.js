@@ -11,13 +11,17 @@ const CloseAll = () => {
     for (i=0; i < all_panels.length; i++) {
         all_panels[i].setAttribute('hidden', 'hidden');
         all_buttons[i].querySelector('img').src="./assets/images/icon-plus.svg"; 
+        all_buttons[i].setAttribute('aria-expanded', "false"); 
     }; 
 }
 
-button1.addEventListener('click', () => {
-    
-    var head = button1.parentElement
+button1.addEventListener('click', (e) => {
+
+    var head = button1.parentElement;
+
     var panel1 = head.querySelector('#panel1'); 
+
+    var status = button1.getAttribute('aria-expanded'); 
 
     // alles sluiten
 
@@ -26,10 +30,8 @@ button1.addEventListener('click', () => {
 
     // panel1 openen of sluiten.
 
-    var status = button1.getAttribute('aria-expanded'); 
-    
-    if (status== "false") {
-        panel1.removeAttribute('hidden')
+   if (status== "false") {
+        panel1.removeAttribute('hidden'); 
         button1.setAttribute('aria-expanded', 'true'); 
         button1.querySelector('img').src="./assets/images/icon-minus.svg"; 
     } else {
@@ -37,26 +39,27 @@ button1.addEventListener('click', () => {
         button1.setAttribute('aria-expanded','false' );
         button1.querySelector('img').src="./assets/images/icon-plus.svg"; 
     }
+     
 })
 
 
 
 button2.addEventListener('click', () => {
     
-    var head = button2.parentElement
+    var head = button2.parentElement;
     var panel2 = head.querySelector('#panel2'); 
 
-
+    var status = button2.getAttribute('aria-expanded'); 
     // alles sluiten
 
     CloseAll(); 
 
     // panel2 openen.
 
-    var status2 = button2.getAttribute('aria-expanded'); 
+  
     
-    if (status2 == "false") {
-        panel2.removeAttribute('hidden')
+    if (status == "false") {
+        panel2.removeAttribute('hidden'); 
         button2.setAttribute('aria-expanded', 'true'); 
         button2.querySelector('img').src="./assets/images/icon-minus.svg"; 
     } else {
@@ -66,11 +69,6 @@ button2.addEventListener('click', () => {
     }
 })
 
-
-
-
-/*
-
 button3.addEventListener('click', () => {
     
     var head = button3.parentElement
@@ -79,14 +77,24 @@ button3.addEventListener('click', () => {
 
     // alles sluiten
 
+    var status = button3.getAttribute('aria-expanded'); 
+
     CloseAll(); 
 
     // panel3 openen.
 
-    panel3.removeAttribute('hidden')
-    button3.setAttribute('aria-expanded', 'true'); 
-    button3.querySelector('img').src="./assets/images/icon-minus.svg"; 
-})
+    if (status == "false") {
+        panel3.removeAttribute('hidden'); 
+        button3.setAttribute('aria-expanded', 'true'); 
+        button3.querySelector('img').src="./assets/images/icon-minus.svg"; 
+    } else {
+        panel3.setAttribute('hidden', 'hidden');
+        button3.setAttribute('aria-expanded','false' );
+        button3.querySelector('img').src="./assets/images/icon-plus.svg"; 
+    }
+}); 
+
+
 
 button4.addEventListener('click', () => {
     
@@ -96,12 +104,22 @@ button4.addEventListener('click', () => {
 
     // alles sluiten
 
+    var status = button3.getAttribute('aria-expanded'); 
+
     CloseAll(); 
 
     // panel4 openen.
 
-    panel4.removeAttribute('hidden')
-    button4.setAttribute('aria-expanded', 'true'); 
-    button4.querySelector('img').src="./assets/images/icon-minus.svg"; 
+    if (status == "false") {
+        panel4.removeAttribute('hidden'); 
+        button4.setAttribute('aria-expanded', 'true'); 
+        button4.querySelector('img').src="./assets/images/icon-minus.svg"; 
+    } else {
+        panel4.setAttribute('hidden', 'hidden');
+        button4.setAttribute('aria-expanded','false' );
+        button4.querySelector('img').src="./assets/images/icon-plus.svg"; 
+    }
+
 })
-*/
+
+
